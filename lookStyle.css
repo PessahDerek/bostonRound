@@ -134,9 +134,8 @@ footer img{
         display: none;
     }
     .productShow {
-        margin-top: 90%;
+        margin-top: 100%;
         width: 90%;
-        margin-left: 5%;
         height: 90vw;
         overflow: hidden;
     }
