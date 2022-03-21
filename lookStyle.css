@@ -1,0 +1,139 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+@font-face {
+    font-family: arciform;
+    src: url(./fonts/Arciform.otf);
+}
+
+html, body {
+    background-color: white;
+    height: 48vw;
+}
+nav {
+    color: #6E009D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Leelawadee UI;
+    height: 7vh;
+    line-height: 7vh;
+}
+nav div {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+nav h1 {
+    font-size: 2.5em;
+}
+nav div a {
+    text-decoration: none;
+    font-size: 1.3em;
+    border-bottom: 2px hsl(0, 96%, 72%) solid;
+    text-align: center;
+
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+nav div a::after {
+    content: '';
+    width: 0;
+    height: 2vh;
+    background-color: transparent;
+}
+@keyframes underline {
+    from{border-radius: 2px #FC7171 solid;}
+}
+.productShow {
+    width: 40%;
+    height: 40vw;
+    background-color: transparent;
+    margin-top: 1%;
+    position: relative;
+    margin-left: 10%;
+}
+.productShow .prodBg {
+    width: 80%;
+    height: 33vw;
+    z-index: 1;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #FC7171;
+    transition: background-color 1s;
+}
+.productShow img {
+    width: 140%;
+    position: absolute;
+    top: 20%;
+    margin-left: -12%;
+    z-index: 10;
+    transition: transform 1s;
+}
+
+.first, .second, .third {
+    border-radius: 50%;
+    position: absolute;
+}
+.first {
+    width: 15vmax;
+    height: 15vmax;
+    background-color: #FDF7F7;
+    top: 3%;
+    left: 45%;
+}
+.second {
+    width: 8vmax;
+    height: 8vmax;
+    background-color: #F5D8D8;
+    left: 65%;
+    top: 15%;
+}
+.third {
+    width: 25vmax;
+    height: 25vmax;
+    left: 50%;
+    top: 30%;
+    font-family: Arciform;
+    color: #3C3C3C;
+    text-align: center;
+    background-image: linear-gradient(180deg, #E8E1EF, #FFFFB1);
+}
+.third h2 {
+    width: 101%;
+    font-size: 8vmin;
+    margin-top: 30%;
+}
+.third h1 {
+    font-size: 18vmin;
+    margin-left: -10%;
+    transition: color 1s;
+}
+
+
+footer {
+    text-align: center;
+}
+footer img{
+    width: 2em;
+    margin-left: 2%;
+}
+.ex img{
+    width: 2.4em;
+}
+
+@media screen and (max-width: 480px) {
+    nav div {
+        display: none;
+    }
+    .productShow {
+        margin-top: 90%;
+    }
+}
+
