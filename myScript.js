@@ -1,4 +1,4 @@
-
+let countTimes = 0;
 $(document).ready(
     $(".prodBg").hover(function(){ 
         this.style.backgroundColor = "orange"
@@ -16,5 +16,17 @@ $(document).ready(
         $(this).css("color", "#FC7171");
     }, function(){
         $(this).css("color", "#3C3C3C");
+    }),
+
+    // drop down menu button 
+    $(".dropBtn").click(function(){
+        if (countTimes == 0){
+            $(".dropDown").css("display", "flex");
+            countTimes ++;
+        } else {
+            $(".dropDown").css("display", "none");
+            countTimes = 0;
+        }
+        
     })
 )
