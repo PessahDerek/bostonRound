@@ -134,6 +134,24 @@ footer img{
     }
     .productShow {
         margin-top: 90%;
+        width: 90%;
+        height: 90vw;
+    }
+    .productShow .prodBg {
+        height: 75vw;
+    }
+    .first {
+        margin-top: 2%;
+        margin-left: 20%;
+        left: unset;
+        top: unset;
+    }
+    
+    .third {
+        left: unset;
+        margin-left: 25%;
+        top: unset;
+        margin-top: 35%;
     }
 }
 
